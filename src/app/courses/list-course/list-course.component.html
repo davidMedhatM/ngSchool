@@ -1,0 +1,29 @@
+<div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h1 class="text-info text-center">courses</h1>
+        <table class="table table-bordered table-dark table-striped">
+          <thead class="thead-dark text-center">
+            <tr>
+              <th>id</th>
+              <th>name</th>
+              <th>period</th>
+              <th>action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let course of alldata">
+              <td> {{course.id}} </td>
+              <td> {{course.name}} </td>
+              <td> {{course.period}} </td>
+              <td class="justify-content-around">
+                <a  class="btn btn-info mr-2" routerLink="/updateC/{{course.id}}">edit</a>
+                <button class="btn btn-danger" (click)="remove(course.id)">delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  

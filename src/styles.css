@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('../src/assets/images/depositphotos_318679392-stock-photo-black-background-seamless-brick-wall.jpg');
+
+    font-family: 'Lobster', cursive;}
+.card{
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px black;
+}
